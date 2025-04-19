@@ -6,8 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/pesat.png" type="image/x-icon">
   <title>EXPOBESAR-KELOMPOK2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Akaya+Kanadaka&family=Akronim&family=Allura&family=Almendra+Display&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Babylonica&family=Ballet:opsz@16..72&family=Beau+Rivage&family=Beth+Ellen&family=Bilbo+Swash+Caps&family=Bungee+Spice&family=Butcherman&family=Calligraffitti&family=Caramel&family=Cherish&family=Cinzel:wght@400..900&family=Creepster&family=Eater&family=Elsie:wght@400;900&family=Ephesis&family=Ewert&family=Felipa&family=Festive&family=Flavors&family=Fontdiner+Swanky&family=Freckle+Face&family=Fredericka+the+Great&family=Frijole&family=Gloock&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Jacquard+12&family=Lavishly+Yours&family=Miltonian+Tattoo&family=Modern+Antiqua&family=Mountains+of+Christmas:wght@400;700&family=Mystery+Quest&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&family=Rye&family=Sancreek&family=Style+Script&family=Tangerine:wght@400;700&family=Trade+Winds&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="bootstrap-5.3.3/css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="style.css">
   <style>
       .sectionl-1 {
@@ -84,6 +89,31 @@
       }
       .menu-footer:hover{
         color: rgba(255,193,7,1) !important;
+      }
+      .ubahfont {
+        font-family:Trade Winds ;
+      }
+      .fontaja{
+        font-family:Mountains of Christmas;
+      }
+      .fontbutton{
+        font-family: Fredericka the Great;
+      }
+      .fontpenulis{
+        font-family: Lavishly Yours;
+      }
+      .font2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+      }
+      .fontbutton2{
+        font-family:Fredericka the Great ;
+      }
+      .fonttentangjk{
+        font-family: ;
+      }
+      .bg-sec-1 {
+        background-image: url(images/);
       }
 
       @media only screen and (max-width: 600px) {
@@ -171,25 +201,28 @@
    <section class="row bg-primary text-white py-5">
        <div class="col-sm-6 order-md-last">
            <div class="sectionl-2">
-               <img src="images/first pic jk.svg" alt="ilustration-1" class="ilustration-1">
-           </div>
+               <img src="images/first pic jk.svg" alt="ilustration-1" class="ilustration-1 animate__animated animate__tada animate__delay-1s">
+            </div>
        </div>
        <div class="col-sm-6">
            <div class="sectionl-1">
-               <h1 class="mb-4">"Dari Kesulitan Menuju Keajaiban: Kisah J.K. Rowling</h1>
-               <p>Temukan perjalanan inspiratif J.K. Rowling dari masa-masa sulitnya hingga menjadi salah satu penulis paling berpengaruh di dunia dengan kisah Harry Potter yang mendunia.</p>
-               <button class="btn btn-lg bt-warning mt-4">Button</button>
+               <h1 class="mb-4 animate__animated animate__flipInX fontaja">"Dari Kesulitan Menuju Keajaiban: Kisah J.K. Rowling</h1>
+               <p data-aos="fade-zoom-in"
+               data-aos-easing="ease-in-back"
+               data-aos-delay="300"
+               data-aos-offset="0" class="font2">Temukan perjalanan inspiratif J.K. Rowling dari masa-masa sulitnya hingga menjadi salah satu penulis paling berpengaruh di dunia dengan kisah Harry Potter yang mendunia.</p>
+               <button class="btn btn-lg bt-warning mt-4 fontbutton">Button</button>
            </div>
        </div>
    </section>
-   <section class="row py-5">
+   <section class="row py-5 bg-sec-1">
       <div class="col text-center">
           <!-- lorem2 -->
-          <strong>Penulis Inspiratif</strong>
+          <strong class="fontpenulis">Penulis Inspiratif</strong>
           <!-- lorem5 -->
-          <h1>Mengapa J.K. Rowling Menginspirasi Dunia?</h1>
+          <h1 class="ubahfont">Mengapa J.K. Rowling Menginspirasi Dunia?</h1>
           <!-- lorem8 -->
-        <div class="lead mb-4">J.K. Rowling memiliki makna simbol ketekunan dan kreativitas. Dari kesulitan hidup, dia menjadi penulis berpengaruh, mengajarkan bahwa mimpi bisa tercapai dengan usaha, kesabaran, dan tekad.</div>
+        <div class="lead mb-4 fonttentangjk">J.K. Rowling memiliki makna simbol ketekunan dan kreativitas. Dari kesulitan hidup, dia menjadi penulis berpengaruh, mengajarkan bahwa mimpi bisa tercapai dengan usaha, kesabaran, dan tekad.</div>
         <div class="row justify-content-center">
           <div class="col-sm-5">
             <div class="row">
@@ -197,7 +230,7 @@
                    <input type="text" class="form-control" placeholder="ketik disini">
                   </div>
                <div class="col-sm-3 mb-3">
-                  <button class="btn btn-warning">Jelajahi Perjalanannya</button>
+                  <button class="btn btn-warning fontbutton2">Jelajahi Perjalanannya</button>
                </div>
             </div>
           </div>
@@ -470,7 +503,7 @@
             <div class="card bg-primary text-light">
                 <div class="card-body">
                     <div class="row p-4">
-                        <div class="col-sm-6 order-md-last text-center">
+                        <div class="col-sm-6 order-md-last text-center" data-aos="zoom-in-down">
                             <img src="images/jk dan kereta kencananya wiuwiu.svg" alt="ilustration-2" class="ilustration-2">
                         </div>
                         <div class="col-sm-6">
@@ -488,7 +521,7 @@
     <section class="row section-bg-custom justify-content-center py-5">
         <div class="col-sm-8">
             <div class="row">
-                <div class="col-sm-6 text-center">
+                <div class="col-sm-6 text-center" data-aos="zoom-in-right">
                     <img src="images/svg graduate.svg" alt="ilustration-3" class="ilustration-3">
                 </div>
                 <div class="col-sm-6 text-center">
@@ -501,7 +534,7 @@
                 </div>
             </div>
             <div class="row my-5">
-                <div class="col-sm-6 text-center order-md-last">
+                <div class="col-sm-6 text-center order-md-last" data-aos="zoom-in-left">
                     <img src="images/Universitas Exeter JK.svg" alt="ilustration-4" class="ilustration-3">
                 </div>
                 <div class="col-sm-6 section5-1">
@@ -512,7 +545,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 text-center">
+                <div class="col-sm-6 text-center" data-aos="zoom-in-right">
                     <img src="images/GATAU AH HOGWARTS.svg" alt="ilustration-5" class="ilustration-3">
                 </div>
                 <div class="col-sm-6 section5-1">
@@ -881,7 +914,11 @@
     </div>
   </div>
 </footer>
-<script src="bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>  
+<script src="bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script>
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
