@@ -212,13 +212,39 @@ a {
   font-style: normal;
 }
 .cinzel-<uniquifier > {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+   {
+    text-align: start;
+    transition-property: opacity, transform;
+    font-family: "gf_Cinzel variant0", Tofu;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    line-height: initial;
+    opacity: 1;
+    transition-duration: 350ms;
+  }
 }
 .windsong-medium {
   font-family: "WindSong", cursive;
   font-weight: 500;
   font-style: normal;
+}
+.gloock-regular {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rancho-regular {
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalnia-glaze-<uniquifier > {
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
