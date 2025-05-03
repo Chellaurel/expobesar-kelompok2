@@ -1,0 +1,250 @@
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: #900c3f !important;
+}
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+.btn-group-lg > .btn,
+.btn-lg {
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-font-size: 1.25rem;
+  --bs-btn-border-radius: var(--bs-border-radius-lg);
+}
+.btn {
+  bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: #ffce1c;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: #ff000000;
+  --bs-btn-hover-border-color: #ecbc1e;
+  --bs-btn-box-shadow: inset 0 1px 0 rgb(255 83 83 / 15%),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.btn-warning {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #ffc107;
+  --bs-btn-border-color: #ffc107;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #ffca2c;
+  --bs-btn-hover-border-color: #ffc720;
+  --bs-btn-focus-shadow-rgb: 217, 164, 6;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #ffcd39;
+  --bs-btn-active-border-color: #ffc720;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #ffc107;
+  --bs-btn-disabled-border-color: #ffc107;
+}
+.btn:hover {
+  color: #af0000;
+  background-color: #ffc712;
+  border-color: #ff9901;
+}
+.btn-outline-warning {
+  --bs-btn-color: #ffc107;
+  --bs-btn-border-color: #ffc107;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #ffc107;
+  --bs-btn-hover-border-color: #ffc107;
+  --bs-btn-focus-shadow-rgb: 255, 193, 7;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #ffc107;
+  --bs-btn-active-border-color: #ffc107;
+  --bs-btn-active-shadow: inset 0 3px 5px rgb(204 0 0 / 81%);
+  --bs-btn-disabled-color: #ffc107;
+  --bs-btn-disabled-bg: #ff0000ed;
+  --bs-btn-disabled-border-color: #ffc107;
+  --bs-gradient: none;
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #b10000;
+  --bs-btn-border-color: #ffb422;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2b790b;
+  --bs-btn-hover-border-color: #05ffc9;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #260c7c;
+  --bs-btn-active-bg: #55d4e6;
+  --bs-btn-active-border-color: #03fac4;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+.btn-lg {
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-font-size: 1.25rem;
+  --bs-btn-border-radius: var(--bs-border-radius-lg);
+}
+.text-primary {
+  --bs-text-opacity: 1;
+  color: rgb(193 0 0) !important;
+}
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: #ffe8fec7;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-tabs {
+  --bs-nav-tabs-border-color: #fedeff;
+  --bs-nav-tabs-link-active-border-color: #fff #fff #000000;
+}
+.nav-tabs {
+  --bs-nav-tabs-border-width: var(--bs-border-width);
+  --bs-nav-tabs-border-radius: var(--bs-border-radius);
+  --bs-nav-tabs-link-hover-border-color: var(--bs-secondary-bg)
+    var(--bs-secondary-bg) var(--bs-border-color);
+  --bs-nav-tabs-link-active-color: #000000;
+  --bs-nav-tabs-link-active-bg: var(--bs-body-bg);
+  border-bottom: var(--bs-nav-tabs-border-width) solid
+    var(--bs-nav-tabs-border-color);
+}
+.nav {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: #900c3f;
+  --bs-nav-link-hover-color: #ffcacc;
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav-tabs .nav-link.active {
+  color: #c86262;
+  background-color: #f3d0d7;
+  border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  color: #ffd21a;
+  text-align: right;
+  background-color: #900c3f;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+.bg-black {
+  --bs-bg-opacity: 1;
+  background-color: rgb(107 15 44) !important;
+}
+.text-warning {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
+}
+a {
+  color: #f2bed1;
+  text-decoration: underline;
+}
+.bungee-spice-regular {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rye-regular {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.mystery-quest-regular {
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.beau-rivage-regular {
+  font-family: "Beau Rivage", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.mountains-of-christmas-bold {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.im-fell-great-primer-sc-regular {
+  font-family: "IM Fell Great Primer SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.cinzel-<uniquifier > {
+   {
+    text-align: start;
+    transition-property: opacity, transform;
+    font-family: "gf_Cinzel variant0", Tofu;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    line-height: initial;
+    opacity: 1;
+    transition-duration: 350ms;
+  }
+}
+.windsong-medium {
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+.gloock-regular {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rancho-regular {
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalnia-glaze-<uniquifier > {
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
