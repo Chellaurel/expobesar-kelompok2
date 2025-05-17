@@ -217,8 +217,8 @@
        </div>
    </section>
    <section class="row section-bg-custom">
-       <video class="video--app" id="myVideo" autoplay="muted="" preload="auto">
-          <source src=""
+       <video class="video--app" id="myVideo" autoplay=""muted="" preload="auto">
+          <source src="video_expobesar2k.mp4" type="video/mp4">
       </video>
    </section>
    <section class="row py-5 bg-sec-1">
@@ -943,6 +943,25 @@
   });
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-</script>  
+</script>
+<script>
+  var videoEl = document.getElementById("myViedeo");
+  var videoWastarted = false;
+
+  window.addEventListener('scroll', function (e) {
+    if (isScrolledIntoview(videoEl) && !videoWasStarted) {
+      videoWasStarted = true;
+      videoEl.play();
+    }
+  });
+
+  function isScrolledIntoview(el) {
+    var elemTop = el.getBoundingClientrect().top;
+    var elemBottom = el.getBoundingClientRect().bottom;
+
+    var isVible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return isVible;
+  }
+</script> 
 </body>
 </html>
